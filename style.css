@@ -1,0 +1,25 @@
+:root {
+  /* Colors */
+
+  /* Basic */
+  --light: #fefefd;
+  --dark: #141c17;
+
+  /* Primary */
+  --primary-1: #769583;
+  --primary-2: #3b634c;
+  --primary-3: #224e34;
+  --primary-4: #1c2e23;
+
+  /* Secondary */
+  --secondary-1: #bbc5d8;
+  --secondary-2: #3963b7;
+  --secondary-3: #0f3e9a;
+  --secondary-4: #1a2e55;
+
+  /* Tertiary */
+  --tertiary-1: #581830;
+  --tertiary-2: #ad919b;
+  --tertiary-3: #6c3248;
+  --tertiary-4: #321721;
+}
