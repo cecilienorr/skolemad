@@ -35,6 +35,7 @@
   --spacing-20: 1.25rem;
   --spacing-30: 1.875rem;
   --spacing-40: 2.5rem;
+  --spacing-50: 3rem;
   --spacing-80: 5rem;
 
   /*fonts*/
@@ -101,7 +102,7 @@ header {
 }
 
 .logo {
-  max-width: 60%;
+  max-width: 50%;
   min-width: 40%;
 }
 
@@ -156,7 +157,7 @@ header {
 .mobile-menu {
   position: fixed;
   right: 0;
-  top: var(--spacing-40);
+  top: var(--spacing-50);
   background-color: var(--light);
   width: 90%;
   height: 100%;
@@ -210,11 +211,23 @@ a:active {
 /*Media query*/
 
 @media (min-width: 750px) {
-  .navigation ul {
-    margin: 0 7rem;
-  }
   .navigation li {
-    padding-right: var(--spacing-40);
+    padding: var(--spacing-20);
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .navigation li {
+    padding: var(--spacing-20);
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .navigation li {
+    padding: var(--spacing-10);
+    padding-top: 1rem;
   }
 }
 
@@ -229,11 +242,5 @@ a:active {
 
   .navigation ul {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .navigation {
-    width: 100%;
   }
 }
