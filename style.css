@@ -39,13 +39,13 @@
 
   /*fonts*/
 
-  --font-body-small: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-  --font-body: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-  --font-body-lead: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
-  --font-heading-h3: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
-  --font-heading-h2: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-  --font-display-heading: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
-  --font-Display-mega: clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem);
+  --font-size-body-small: clamp(0.75rem, 0.45vw + 0.64rem, 1rem);
+  --font-size-body: clamp(0.94rem, 0.72vw + 0.76rem, 1.33rem);
+  --font-size-body-lead: clamp(1.17rem, 1.1vw + 0.9rem, 1.78rem);
+  --font-size-heading-h3: clamp(1.46rem, 1.64vw + 1.05rem, 2.37rem);
+  --font-size-heading-h2: clamp(1.83rem, 2.41vw + 1.23rem, 3.16rem);
+  --font-size-display-heading: clamp(2.29rem, 3.49vw + 1.42rem, 4.21rem);
+  --font-size-Display-mega: clamp(2.86rem, 5vw + 1.61rem, 5.61rem);
 
   --font-hind-madurai: "Hind Madurai", sans-serif;
 
