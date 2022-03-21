@@ -6,22 +6,28 @@
   --dark: #141c17;
 
   /* Primary */
-  --primary-1: #769583;
-  --primary-2: #3b634c;
-  --primary-3: #224e34;
-  --primary-4: #1c2e23;
+  --primary-05: #e9ffac;
+  --primary-1: #d6ff63;
+  --primary-2: #bae747;
+  --primary-3: #93c020;
+  --primary-4: #6d9a00;
+  --primary-5: #426f00;
 
   /* Secondary */
-  --secondary-1: #bbc5d8;
-  --secondary-2: #3963b7;
-  --secondary-3: #0f3e9a;
-  --secondary-4: #1a2e55;
+  --secondary-05: #ffffaa;
+  --secondary-1: #fffc77;
+  --secondary-2: #ffe863;
+  --secondary-3: #f5ca45;
+  --secondary-4: #d3a823;
+  --secondary-5: #ad8200;
 
   /* Tertiary */
-  --tertiary-1: #581830;
-  --tertiary-2: #ad919b;
-  --tertiary-3: #6c3248;
-  --tertiary-4: #321721;
+  --tertiary-05: #ffc4a1;
+  --tertiary-1: #ff9471;
+  --tertiary-2: #ff6946;
+  --tertiary-3: #e74a27;
+  --tertiary-4: #c82b08;
+  --tertiary-5: #a70a00;
 
   /* Spacing */
   --spacing-10: 0.625rem;
