@@ -31,24 +31,22 @@
   --spacing-40: 2.5rem;
   --spacing-80: 5rem;
 
+  /*fonts*/
 
-/*fonts*/
+  --font-body-small: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-body: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-body-lead: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-heading-h3: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-heading-h2: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-display-heading: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  --font-Display-mega: clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem);
 
---font-body-small: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
---font-body: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
---font-body-lead: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
---font-heading-h3: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
---font-heading-h2: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
---font-display-heading: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
---font-Display-mega: clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem);
-
---font-hind-madurai: 'Hind Madurai', sans-serif;
+  --font-hind-madurai: "Hind Madurai", sans-serif;
 
   /* Aliases */
   --primary: var(--primary-3);
   --secondary: var(--secondary-3);
   --tertiary: var(--tertiary-3);
-
 }
 
 /* General */
@@ -84,3 +82,28 @@ header {
 }
 
 /* Payment flow */
+
+/*Button*/
+.btn {
+  border-radius: 50px;
+  padding: var(--spacing-10) var(--spacing-40);
+  max-width: 300px;
+  border: none;
+  font-size: var(--font-body);
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  color: var(--primary-1);
+  background: var(--primary-4);
+}
+
+.neutral{
+  color: var(--light);
+  background: var(--dark);
+}
+
+.color {
+  color: var(--secondary-1);
+  background: var(--primary-3);
+}
