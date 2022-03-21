@@ -36,3 +36,34 @@
   --secondary: var(--secondary-3);
   --tertiary: var(--tertiary-3);
 }
+
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--spacing-30);
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navigation li {
+  padding: var(--spacing-10);
+}
+
+.logo {
+  max-width: 40%;
+}
