@@ -120,11 +120,10 @@ a:link {
 }
 
 a:hover {
-  color: var(--primary-4);
   text-decoration: underline;
 }
 
 a:active {
-  color: var(--primary-4);
+  color: var(--primary-5);
   text-decoration: underline;
 }
