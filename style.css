@@ -99,10 +99,10 @@ header {
   transition: all 0.2s;
 }
 
-.btn:hover {
-  color: var(--primary-1);
-  background: var(--primary-4);
+.btn:hover{
+  cursor: pointer;
 }
+
 
 .neutral{
   color: var(--light);
@@ -110,6 +110,6 @@ header {
 }
 
 .color {
-  color: var(--secondary-1);
-  background: var(--primary-3);
+  color: var(--light);
+  background: var(--secondary);
 }
