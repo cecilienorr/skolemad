@@ -127,3 +127,21 @@ a:active {
   color: var(--primary-5);
   text-decoration: underline;
 }
+
+
+/*Footer*/
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--spacing-40);
+  font-size: var(--font-body-small);
+  padding: var(--spacing-20) var(--spacing-40);
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+  line-height: var(--spacing-40);
+}
+
