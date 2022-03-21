@@ -99,12 +99,11 @@ header {
   transition: all 0.2s;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
 }
 
-
-.neutral{
+.neutral {
   color: var(--light);
   background: var(--dark);
 }
@@ -112,4 +111,20 @@ header {
 .color {
   color: var(--light);
   background: var(--secondary);
+}
+/*Links*/
+a:link {
+  font-size: var(--font-body-small);
+  text-decoration: none;
+  color: var(--dark);
+}
+
+a:hover {
+  color: var(--primary-4);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--primary-4);
+  text-decoration: underline;
 }
