@@ -22,4 +22,17 @@
   --tertiary-2: #ad919b;
   --tertiary-3: #6c3248;
   --tertiary-4: #321721;
+
+  /* Spacing */
+  --spacing-10: 0.625rem;
+  --spacing-15: 0.9375rem;
+  --spacing-20: 1.25rem;
+  --spacing-30: 1.875rem;
+  --spacing-40: 2.5rem;
+  --spacing-80: 5rem;
+
+  /* Aliases */
+  --primary: var(--primary-3);
+  --secondary: var(--secondary-3);
+  --tertiary: var(--tertiary-3);
 }
