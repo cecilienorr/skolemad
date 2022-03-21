@@ -1,60 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <figure class="logo">
-        <a href="#"
-          ><img class="logo" src="img/SkoleMad_logo.png" alt="logo"
-        /></a>
-      </figure>
-      <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <figure class="logo">
+      <a href="#"><img class="logo" src="img/SkoleMad_logo.png" alt="logo" /></a>
+    </figure>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Bestil mad </a></li>
+        <li><a href="#">Min konto </a></li>
+        <li><a href="index.html">Log ud</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="landingPage">
+
+
+    
+      <div class="intro">
+        <H1>Velkommen Felix og Mikkas forældre</H1>
         <ul>
-          <li><a href="#">Bestil mad </a></li>
-          <li><a href="#">Min konto </a></li>
-          <li><a href="index.html">Log ud</a></li>
+          <li>
+            <p>Kavebod Fælled Skole</p>
+          </li>
+          <li>
+            <p>Barn 1 : Felix nr. 805</p>
+          </li>
+          <li>
+            <p>Barn 2 : Mikka nr. 1308</p>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="overview">
-        <button><a href="flow.html">Indsæt penge</a></button>
-      </section>
-    </main>
-    <footer>
-  
-      <ul>
-        <li>Vilkår</li>
-        <li>Privatlivspolitik</li>
-        <li>Kontakt</li>
-      </ul>
 
-   <ul>
-     <li>Erhverv</li>
-     <li>Leverandør</li>
-     <li>Privat</li>
-     <li>Ny på Skolemad.dk</li>
-   </ul>
+        <p>Her på siden kan du foretage og ændre bestillinger. Du kan ændre din betalingsløsninger og få en oversigt
+          over dine tidligere handlinger.</p>
+        <p>Skulle du alligevel møde udfordringer, er du velkommen til at kontakte Skolemad på post@skolemad.dk eller
+          70222910</p>
 
-      <ul>
-        <li>SkoleMad ApS</li>
-          <li>Klaringen 15</li>
-          <li>4174 Jystrup</li>
-          <li>70222910</li>
-          <li>post@skolemad.dk</li>
-      </ul>
-    </footer>
-  </body>
+        <h3>Din saldo er <span id="saldo">265</span> kr</h3>
+      </div>
+
+      <section class="options">
+    
+        <button class="btn neutral">
+          Placer bestilling
+        </button>
+        <button class="btn neutral" href="flow.html">Indsæt penge</button>
+
+        <button class="btn neutral">Din profil
+        </button>
+        <button class="btn neutral">Kontoudtog</button>
+     
+    </section>
+
+    <section class="menu">
+      <h2>Denne uges menu</h2>
+
+
+      <h3>Uge 43</h3>
+
+      <ol>
+        <li>Mandag
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
+            cupiditate voluptate</p>
+        </li>
+        <li>Tirsdag
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
+            cupiditate voluptate</p>
+        </li>
+        <li>Onsdag
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
+            cupiditate voluptate</p>
+        </li>
+        <li>Torsdag
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
+            cupiditate voluptate</p>
+        </li>
+        <li>Fredag
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
+            cupiditate voluptate</p>
+        </li>
+      </ol>
+
+    </section>
+
+  </main>
+  <footer>
+
+    <ul>
+      <li>Vilkår</li>
+      <li>Privatlivspolitik</li>
+      <li>Kontakt</li>
+    </ul>
+
+    <ul>
+      <li>Erhverv</li>
+      <li>Leverandør</li>
+      <li>Privat</li>
+      <li>Ny på Skolemad.dk</li>
+    </ul>
+
+    <ul>
+      <li>SkoleMad ApS</li>
+      <li>Klaringen 15</li>
+      <li>4174 Jystrup</li>
+      <li>70222910</li>
+      <li>post@skolemad.dk</li>
+    </ul>
+  </footer>
+</body>
+
 </html>
