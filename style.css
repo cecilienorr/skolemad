@@ -51,6 +51,10 @@
 
   --font-hind-madurai: "Hind Madurai", sans-serif;
 
+  /*Border radius*/
+  --border-radius-s: 12px;
+  --border-radius-m: 30px;
+
   /* Aliases */
   --primary: var(--primary-3);
   --secondary: var(--secondary-3);
