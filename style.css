@@ -496,9 +496,6 @@ input[type="checkbox"] {
   }
 }
 
-
-
-
 /*landingPage*/
 
 .landingPage {
@@ -637,54 +634,54 @@ input[type="checkbox"] {
 
 @media (max-width: 465px) {
   .tabs .tab,
-.tabs label, .tabs .tab.alm {
+  .tabs label,
+  .tabs .tab.alm {
     order: initial;
     border-radius: var(--border-radius-s);
   }
 
-  .tabs label, .tab.alm {
+  .tabs label,
+  .tab.alm {
     width: 100%;
     margin: var(--spacing-15) auto -20px auto;
     border-radius: var(--border-radius-s);
   }
 }
 
-
 /*Flow*/
 
-.placeOrder{
+.placeOrder {
   background: var(--light-50);
   max-width: 40vw;
   min-width: 300px;
   border-radius: var(--border-radius-s);
   padding: var(--spacing-40);
- margin: var(--spacing-40) auto ; 
- display: flex;
- flex-direction: column;
- gap: var(--spacing-30);
+  margin: var(--spacing-40) auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-30);
 }
 
 .placeOrder a {
   align-self: end;
 }
 
-.tabs .menu label{
+.tabs .menu label {
   justify-content: flex-start;
   font-size: var(--font-size-body);
 }
 
-.tabs .menu div{
+.tabs .menu div {
   display: flex;
   padding-left: var(--spacing-30);
 }
 
-.tabs .menu p{
+.tabs .menu p {
   font-size: var(--font-size-body-lead);
 }
 
-
 .tabs .menu input[type="radio"] {
-  display:inherit;
+  display: inherit;
 }
 
 .tabs .menu input[type="radio"]:checked + label {
@@ -694,4 +691,11 @@ input[type="checkbox"] {
 
 .tabs .menu input[type="radio"]:checked + label + .tab {
   display: inline;
+}
+
+.nothing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
 }
