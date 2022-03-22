@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Ny bruger</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="nav_bar">
       <figure class="logo">
         <a href="index.html"
           ><img class="logo" src="img/SkoleMad_logo.png" alt="logo"
@@ -19,12 +22,24 @@
       </figure>
       <nav class="navigation">
         <ul>
-          <li><a href="leverandore.html"> LEVERANDØRE </a></li>
-          <li><a href="erhverv.html">ERHVERV </a></li>
-          <li><a href="privat.html">PRIVAT </a></li>
-          <li><a href="ny.html">NY PÅ SKOLEMAD </a></li>
+          <li><a href="ny.html">Opret bruger </a></li>
+          <li><a href="#"> Kontakt </a></li>
         </ul>
+        <!-- BURGER MENU -->
+        <button type="button" class="burger" id="menu-btn">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </button>
       </nav>
+
+      <!-- MOBILE MENU  -->
+      <div class="mobile-menu hidden" id="menu">
+        <ul>
+          <li class="first"><a href="ny.html">Opret bruger </a></li>
+          <li><a href="#"> Kontakt </a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <h2>Hello, sign up here</h2>
@@ -87,20 +102,21 @@
         <li>Kontakt</li>
       </ul>
 
-   <ul>
-     <li>Erhverv</li>
-     <li>Leverandør</li>
-     <li>Privat</li>
-     <li>Ny på Skolemad.dk</li>
-   </ul>
+      <ul>
+        <li>Erhverv</li>
+        <li>Leverandør</li>
+        <li>Privat</li>
+        <li>Ny på Skolemad.dk</li>
+      </ul>
 
       <ul>
         <li>SkoleMad ApS</li>
-          <li>Klaringen 15</li>
-          <li>4174 Jystrup</li>
-          <li>70222910</li>
-          <li>post@skolemad.dk</li>
+        <li>Klaringen 15</li>
+        <li>4174 Jystrup</li>
+        <li>70222910</li>
+        <li>post@skolemad.dk</li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

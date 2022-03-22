@@ -15,21 +15,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="payment-site">
-    <header>
+    <header class="nav_bar">
       <figure class="logo">
-        <a href="#"
+        <a href="index.html"
           ><img class="logo" src="img/SkoleMad_logo.png" alt="logo"
         /></a>
       </figure>
       <nav class="navigation">
         <ul>
-          <li><a href="#">Bestil mad </a></li>
-          <li><a href="#">Min konto </a></li>
-          <li><a href="index.html">Log ud</a></li>
+          <li><a href="flow.html">Bestil </a></li>
+          <li><a href="#"> Min konto </a></li>
+          <li><a href="index.html"> Log ud </a></li>
         </ul>
+        <!-- BURGER MENU -->
+        <button type="button" class="burger" id="menu-btn">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </button>
       </nav>
-    </header>
 
+      <!-- MOBILE MENU  -->
+      <div class="mobile-menu hidden" id="menu">
+        <ul>
+          <li><a href="flow.html">Bestil </a></li>
+          <li><a href="#"> Min konto </a></li>
+          <li><a href="index.html"> Log ud </a></li>
+        </ul>
+      </div>
+    </header>
 
 <div class="metode"> 
     <h3>Vælg betalingsmetode</h3>
