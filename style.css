@@ -206,11 +206,11 @@ header {
 /* Payment flow */
 
 /*Links*/
-a:link,
-a:visited {
+a:link, a:visited {
+  color: var(--dark);
   font-size: var(--font-body-small);
   text-decoration: none;
-  color: var(--dark);
+  
 }
 
 a:hover {
@@ -305,14 +305,6 @@ a:active {
   }
 }
 
-/*Links*/
-a:link,
-a:visited {
-  font-size: var(--font-body-small);
-  text-decoration: none;
-  color: var(--dark);
-}
-
 .hero_section img {
   max-width: 70%;
 }
@@ -403,7 +395,7 @@ footer ul {
 .intro p {
   max-width: 800px;
 }
-.intro{
+.intro {
   padding: var(--spacing-80);
 }
 
@@ -411,7 +403,6 @@ footer ul {
   font-size: var(--font-size-body-lead);
   max-width: 600px;
   margin-top: var(--spacing-20);
-
 }
 
 .options {
@@ -421,7 +412,7 @@ footer ul {
   padding: var(--spacing-80);
 }
 
-.options a{
+.options a {
   align-self: center;
 }
 
@@ -430,14 +421,15 @@ footer ul {
     flex-direction: column;
   }
 
-  .intro, .options {
+  .intro,
+  .options {
     padding: var(--spacing-40);
+  }
 }
-}
-
 
 .menu {
-  padding: var(--spacing-40) var(--spacing-15);
+  padding: var(--spacing-80) var(--spacing-30);
+  background: var(--primary-05);
 }
 
 .menu ol {
@@ -460,14 +452,13 @@ footer ul {
   margin-bottom: var(--spacing-10);
 }
 
-
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 30px;
+  border-radius: var(--border-radius-m);
 }
 
-.tabs p{
+.tabs p {
   font-size: var(--font-size-body);
 }
 
@@ -479,10 +470,14 @@ footer ul {
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background:none;
+  background: none;
   font-size: var(--font-size-body-lead);
   transition: ease 0.3s;
   border-radius: 30px 30px 0 0;
+}
+
+.tabs label:hover {
+  text-decoration: underline;
 }
 
 .tabs .tab {
@@ -492,28 +487,23 @@ footer ul {
   height: 100%;
   display: none;
   padding: 1rem;
-  background: var(--secondary-05);
+  background: var(--light);
   border-radius: 30px;
   font-size: var(--font-size-body-small);
- 
 }
 
-.tabs .tab.alm{
+.tabs .tab.alm {
   border-radius: 0 30px 30px 30px;
 }
 
-
-
-.tabs input[type=radio] {
+.tabs input[type="radio"] {
   display: none;
 }
 
-.tabs input[type=radio]:checked + label {
-  background: var(--secondary-05)
+.tabs input[type="radio"]:checked + label {
+  background: var(--light);
 }
 
-.tabs input[type=radio]:checked + label + .tab {
+.tabs input[type="radio"]:checked + label + .tab {
   display: block;
-
 }
-
