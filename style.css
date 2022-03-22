@@ -5,7 +5,9 @@
   --light: #fefefd;
   --light-20: #fcfcfc;
   --light-50: #f5f5f5;
+  --light-70: #e6e6e6;
   --dark: #141c17;
+  --dark1: rgb(24, 32, 27);
 
   /* Primary */
   --primary-05: #e9ffac;
@@ -14,6 +16,7 @@
   --primary-3: #93c020;
   --primary-4: #6d9a00;
   --primary-5: #426f00;
+  --primary-6: #213600;
 
   /* Secondary */
   --secondary-05: #ffffaa;
@@ -39,6 +42,7 @@
   --spacing-40: 2.5rem;
   --spacing-50: 3rem;
   --spacing-80: 5rem;
+  --spacing-100: 10rem;
 
   /*fonts*/
 
@@ -233,7 +237,7 @@ a:active {
 /*Button*/
 .btn {
   border-radius: 50px;
-  padding: var(--spacing-10) var(--spacing-40);
+  padding: var(--spacing-10) var(--spacing-20);
   max-width: 300px;
   border: none;
   font-size: var(--font-body);
@@ -256,7 +260,7 @@ a:active {
 
 .inverted {
   border: 1px solid var(--dark);
-  background: none;
+  background: var(--light-50);
   color: var(--dark);
 }
 
@@ -505,7 +509,7 @@ input[type="checkbox"] {
 }
 
 .intro {
-  padding: var(--spacing-40) var(--spacing-15);
+  padding: var(--spacing-80) var(--spacing-15);
 }
 .intro ul {
   list-style: none;
@@ -529,14 +533,37 @@ input[type="checkbox"] {
 }
 
 .options {
+  background-color: var(--light-50);
+  padding: 3rem;
+  padding-left: 10rem;
+}
+
+.op-btn-group {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-40);
-  padding: var(--spacing-80);
+  gap: var(--spacing-30);
+  padding: var(--spacing-40);
 }
 
 .options a {
   align-self: center;
+}
+
+.uge_group {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 700px) {
+  .intro {
+    padding-left: var(--spacing-100);
+    padding-right: var(--spacing-100);
+  }
+
+  .menu {
+    padding-left: var(--spacing-80);
+    padding-right: var(--spacing-80);
+  }
 }
 
 @media (max-width: 600px) {
@@ -551,8 +578,18 @@ input[type="checkbox"] {
 }
 
 .menu {
-  padding: var(--spacing-80) var(--spacing-30);
+  padding: var(--spacing-80) var(--spacing-100);
   background: var(--primary-05);
+}
+
+.menu h2,
+.menu h3,
+h1 {
+  color: var(--primary-6);
+}
+
+.næste_menu {
+  padding-bottom: 3rem;
 }
 
 .menu ol {
@@ -567,11 +604,11 @@ input[type="checkbox"] {
 .menu li {
   font-size: var(--font-size-body-lead);
   line-height: var(--spacing-30);
-  width: 250px;
+  width: 200px;
 }
 
 .menu p {
-  font-size: var(--font-size-body-lead);
+  font-size: var(--font-size-body-small);
   margin-bottom: var(--spacing-10);
 }
 
@@ -582,7 +619,7 @@ input[type="checkbox"] {
 }
 
 .tabs p {
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-body-small);
 }
 
 .tabs label {
