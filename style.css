@@ -231,13 +231,9 @@ a:active {
 
 /* hero section*/
 .hero_section {
-  background-color: #ebe3d7;
-  display: flex;
-  flex-direction: row;
-}
-
-.hero_section img {
-  max-width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f7ffe2;
 }
 
 .hero_section article {
@@ -245,10 +241,38 @@ a:active {
   margin: auto;
 }
 
-.hero_section h2 {
-  color: var(--primary-5);
-  padding-right: 10rem;
-  margin-left: -15rem;
+.hero_section h1 {
+  color: var(--dark);
+  padding: 5rem;
+}
+
+.hero_section .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: var(--primary-05);
+  padding: 3rem;
+  border-radius: 30px;
+}
+
+.hero_section .buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero_section input {
+  padding: 1rem 6rem;
+  border-radius: 12px;
+  border: none;
+  margin: 1rem;
+}
+
+.hero_section button,
+.glemt {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 /*Media query*/
