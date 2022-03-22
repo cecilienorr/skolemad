@@ -1,124 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Homepage</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <figure class="logo">
-      <a href="#"><img class="logo" src="img/SkoleMad_logo.png" alt="logo" /></a>
-    </figure>
-    <nav class="navigation">
-      <ul>
-        <li><a href="#">Bestil mad </a></li>
-        <li><a href="#">Min konto </a></li>
-        <li><a href="index.html">Log ud</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="landingPage">
-
-
-    
-      <div class="intro">
-        <H1>Velkommen Felix og Mikkas forældre</H1>
+  <body>
+    <header class="nav_bar">
+      <figure class="logo">
+        <a href="index.html"
+          ><img class="logo" src="img/SkoleMad_logo.png" alt="logo"
+        /></a>
+      </figure>
+      <nav class="navigation">
         <ul>
-          <li>
-            <p>Kavebod Fælled Skole</p>
-          </li>
-          <li>
-            <p>Barn 1 : Felix nr. 805</p>
-          </li>
-          <li>
-            <p>Barn 2 : Mikka nr. 1308</p>
-          </li>
+          <li><a href="flow.html">Bestil </a></li>
+          <li><a href="#"> Min konto </a></li>
+          <li><a href="index.html"> log ud </a></li>
         </ul>
+        <!-- BURGER MENU -->
+        <button type="button" class="burger" id="menu-btn">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </button>
+      </nav>
 
-        <p>Her på siden kan du foretage og ændre bestillinger. Du kan ændre din betalingsløsninger og få en oversigt
-          over dine tidligere handlinger.</p>
-        <p>Skulle du alligevel møde udfordringer, er du velkommen til at kontakte Skolemad på post@skolemad.dk eller
-          70222910</p>
+      <!-- MOBILE MENU  -->
+      <div class="mobile-menu hidden" id="menu">
+        <ul>
+          <li><a href="flow.html">Bestil </a></li>
+          <li><a href="#"> Min konto </a></li>
+          <li><a href="index.html"> log ud </a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>Velkommen Felix og Mikkas forældre</h1>
 
-        <h3>Din saldo er <span id="saldo">265</span> kr</h3>
+        <p>
+          Her kan du oprette ordre og få hjælp så der altid er styr på
+          madpakkerne
+        </p>
       </div>
 
       <section class="options">
-    
-        <button class="btn neutral">
-          Placer bestilling
-        </button>
-        <button class="btn neutral" href="flow.html">Indsæt penge</button>
+        <a href="##"> <button class="btn neutral">Placer ordre</button></a>
 
-        <button class="btn neutral">Din profil
-        </button>
-        <button class="btn neutral">Kontoudtog</button>
-     
-    </section>
+        <a href="##">
+          <button class="btn neutral">Start fast bestilling</button></a
+        >
 
-    <section class="menu">
-      <h2>Denne uges menu</h2>
+        <a href="##"> <button class="btn neutral">Kontoudtog</button></a>
 
+        <a href="##"> <button class="btn neutral">Din profil</button></a>
 
-      <h3>Uge 43</h3>
+        <a href="##"> <button class="btn neutral">Kontakt</button></a>
+      </section>
 
-      <ol>
-        <li>Mandag
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
-            cupiditate voluptate</p>
-        </li>
-        <li>Tirsdag
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
-            cupiditate voluptate</p>
-        </li>
-        <li>Onsdag
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
-            cupiditate voluptate</p>
-        </li>
-        <li>Torsdag
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
-            cupiditate voluptate</p>
-        </li>
-        <li>Fredag
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro vero possimus debitis commodi
-            cupiditate voluptate</p>
-        </li>
-      </ol>
+      <section class="menu">
+        <h2>Næste måneds menu</h2>
+        <p>April</p>
 
-    </section>
+        <p>pil Uge 43 pil</p>
 
-  </main>
-  <footer>
+        <section class="tabs">
+          <input type="radio" name="tabs" id="tabone" checked="checked" />
+          <label for="tabone">Almindelig</label>
+          <div class="tab alm">
+            <ol>
+              <li>
+                Mandag
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Tirsdag
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Onsdag
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Torsdag
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Fredag
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+            </ol>
+          </div>
 
-    <ul>
-      <li>Vilkår</li>
-      <li>Privatlivspolitik</li>
-      <li>Kontakt</li>
-    </ul>
+          <input type="radio" name="tabs" id="tabtwo" />
+          <label for="tabtwo">Vegetar</label>
+          <div class="tab">
+            <ol>
+              <li>
+                Mandag VEG
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Tirsdag VEG
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Onsdag VEG
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Torsdag VEG
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+              <li>
+                Fredag VEG
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita porro vero possimus
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>Vilkår</li>
+        <li>Privatlivspolitik</li>
+        <li>Kontakt</li>
+      </ul>
 
-    <ul>
-      <li>Erhverv</li>
-      <li>Leverandør</li>
-      <li>Privat</li>
-      <li>Ny på Skolemad.dk</li>
-    </ul>
+      <ul>
+        <li>Erhverv</li>
+        <li>Leverandør</li>
+        <li>Privat</li>
+        <li>Ny på Skolemad.dk</li>
+      </ul>
 
-    <ul>
-      <li>SkoleMad ApS</li>
-      <li>Klaringen 15</li>
-      <li>4174 Jystrup</li>
-      <li>70222910</li>
-      <li>post@skolemad.dk</li>
-    </ul>
-  </footer>
-</body>
-
+      <ul>
+        <li>SkoleMad ApS</li>
+        <li>Klaringen 15</li>
+        <li>4174 Jystrup</li>
+        <li>70222910</li>
+        <li>post@skolemad.dk</li>
+      </ul>
+    </footer>
+  </body>
 </html>
