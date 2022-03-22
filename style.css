@@ -699,3 +699,50 @@ input[type="checkbox"] {
   align-items: center;
   margin: 3rem;
 }
+
+
+/*konto*/
+.konto{
+  padding: var(--spacing-80);
+}
+
+.konto h3{
+  padding: var(--spacing-15) 0;
+}
+table {
+  width: 600px;
+  min-width: 320px;
+    border: 0.3px solid var(--primary);
+    border-radius: var(--border-radius-s);
+    background: var(--light-50);
+    border-radius: var(--border-radius-s);
+    padding: var(--spacing-10);
+}
+
+td,th{
+padding: var(--spacing-10);
+}
+
+thead,
+tfoot {
+    color: var(--primary);
+}
+
+th {
+  background: var(--light-50);
+}
+
+
+tr:nth-child(odd) {
+  background-color: var(--light-20);
+  border: 2px solid var(--primary);
+
+}
+
+table thead{
+  position: sticky;
+  top: 20px;
+}
+table thead {
+  inset-block-start: 0; /* "top" */
+}
