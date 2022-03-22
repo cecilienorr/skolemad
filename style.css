@@ -453,6 +453,10 @@ footer ul {
   margin: 2rem 20rem;
 }
 
+.payment-site .tilbage {
+  margin: 2rem 22rem;
+}
+
 .pay-group {
   display: flex;
   flex-direction: column;
@@ -477,4 +481,51 @@ footer ul {
 
 #payment #cvv {
   padding: 1rem;
+}
+
+.mobilepay {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 2rem 20rem;
+  background-color: var(--light-50);
+  padding: 3rem;
+  border-radius: 30px;
+}
+
+.mobilepay input {
+  padding: 1rem 12rem 1rem 0.7rem;
+  border-radius: 12px;
+  border: none;
+  margin: 1rem;
+}
+
+.mobilepay button {
+  margin-left: 10rem;
+}
+
+.metode {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 5rem;
+  background-color: var(--light-50);
+  padding: 2rem;
+  border-radius: var(--border-radius-m);
+}
+
+.metode li {
+  list-style: none;
+  font-size: var(--font-size-body);
+}
+
+.metode input {
+  margin-right: 0.5rem;
+  padding: 10rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
 }

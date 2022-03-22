@@ -15,7 +15,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="payment-site">
-    <h3>Sæt ind oplysninger</h3>
+    <header>
+      <figure class="logo">
+        <a href="#"
+          ><img class="logo" src="img/SkoleMad_logo.png" alt="logo"
+        /></a>
+      </figure>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Bestil mad </a></li>
+          <li><a href="#">Min konto </a></li>
+          <li><a href="index.html">Log ud</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+<div class="metode"> 
+    <h3>Vælg betalingsmetode</h3>
+    <ul>
+      <li>
+        <input
+          type="checkbox"
+          id="mobilepay-check"
+          name="mobilepay"
+          value="mobilepay"
+          onclick="myFunction()"
+        />Mobilepay
+      </li>
+      <li> 
+      <input
+      type="checkbox"
+      id="dankort"
+      name="dankort"
+      value="dankort"
+      onclick="myFunction2()"
+    />Dankort
+  </li>
+    </ul>
+  </div>
+
+
+
+
+    
+<div id="kort-betaling" style="display:none"> 
+    <h3>Betale med kort</h3>
     <div class="pay-group">
       <form action="payment" id="payment">
         <div class="name">
@@ -71,12 +116,44 @@
               required
             />
           </label>
+
+
           <a href="landingpage.html"
             ><button class="btn neutral">Betale</button></a
           >
         </div>
       </form>
     </div>
+    <div class="tilbage">
+      <a href="#">Tilbage</a>
+    </div>
+
+  </div>
+
+<div id="mobilepay" style="display:none"> 
+  <h3>Betale med mobilepay</h3>
+
+  <form action="pay">
+    <div class="mobilepay">
+      <label for="mobilepay">
+        <input
+          type="tel"
+          id="mobilepay"
+          name="mobilepay"
+          placeholder="Mobilepay nummer"
+          required
+        />
+      </label>
+      <a href="landingpage.html"
+            ><button class="btn neutral">Send</button></a
+          >
+  </form>
+
+
+</div>
+</div>
+
+
     <footer>
       <ul>
         <li>Vilkår</li>
@@ -99,5 +176,6 @@
         <li>post@skolemad.dk</li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
