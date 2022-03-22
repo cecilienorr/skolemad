@@ -1,55 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h2>Indsæt penge på konto</h2>
-    <form action="payment">
-      <div class="penge">
-        <label for="transfer-money">
-          <input
-            type="text"
-            id="transfer-money"
-            name="transfer-money"
-            placeholder="Indsæt penge"
-            required
-          />
-          DKK
-        </label>
-      </div>
-    </form>
-    <button><a href="flow2.html">Videre til betaling</a></button>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>placer ordre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="nav_bar">
+    <figure class="logo">
+      <a href="index.html"><img class="logo" src="img/SkoleMad_logo.png" alt="logo" /></a>
+    </figure>
+    <nav class="navigation">
+      <ul>
+        <li><a href="ny.html">Opret bruger </a></li>
+        <li><a href="#"> Kontakt </a></li>
+      </ul>
+      <!-- BURGER MENU -->
+      <button type="button" class="burger" id="menu-btn">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU  -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li><a href="ny.html">Opret bruger </a></li>
+        <li><a href="#"> Kontakt </a></li>
+      </ul>
+    </div>
+  </header>
+
+  <body>
+
+
+    <section class="placeOrder">
+
+      <h2>Placer ordre</h2>
+
+      <section class="tabs">
+
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">Alle børn</label>
+        <div class="tab alm menu">
+          <p>Uge 44</p>
+
+          <div>
+            <input type="radio" id="weekVeg" name="menu" value="wv">
+            <label for="weekVeg">Vegetar</label>
+          </div>
+
+          <div>
+            <input type="radio" id="weekReg" name="menu" value="wr">
+            <label for="weekReg">Almindelig</label>
+          </div>
+
+          <p>hele oktober</p>
+
+          <div>
+            <input type="radio" id="MonthVeg" name="menu" value="mv">
+            <label for="MonthVeg">Vegetar</label>
+          </div>
+
+          <div>
+            <input type="radio" id="MonthReg" name="menu" value="mr">
+            <label for="MonthReg">Almindelig</label>
+          </div>
+
+
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">Mikka</label>
+        <div class="tab menu">
+          <p>Uge 44</p>
+
+          <div>
+            <input type="radio" id="weekVeg" name="menu" value="wv">
+            <label for="weekVeg">Vegetar</label>
+          </div>
+
+          <div>
+            <input type="radio" id="weekReg" name="menu" value="wr">
+            <label for="weekReg">Almindelig</label>
+          </div>
+
+          <p>hele oktober</p>
+
+          <div>
+            <input type="radio" id="MonthVeg" name="menu" value="mv">
+            <label for="MonthVeg">Vegetar</label>
+          </div>
+
+          <div>
+            <input type="radio" id="MonthReg" name="menu" value="mr">
+            <label for="MonthReg">Almindelig</label>
+          </div>
+
+
+        </div>
+
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">Felix</label>
+        <div class="tab menu">
+          <p>Uge 44</p>
+
+          <div>
+            <input type="radio" id="weekVeg" name="menu" value="wv">
+            <label for="weekVeg">Vegetar</label>
+          </div>
+
+          <div>
+            <input type="radio" id="weekReg" name="menu" value="wr">
+            <label for="weekReg">Almindelig</label>
+          </div>
+
+          <p>hele oktober</p>
+
+          <div>
+            <input type="radio" id="MonthVeg" name="menu" value="mv">
+            <label for="MonthVeg">Vegetar</label>
+          </div>
+
+          <div>
+            <input type="radio" id="MonthReg" name="menu" value="mr">
+            <label for="MonthReg">Almindelig</label>
+          </div>
+
+
+        </div>
+
+
+      </section>
+
+
+      <a href="flow2.html"><button class="btn neutral">Betal</button></a>
+    </section>
     <footer>
-  
+
       <ul>
         <li>Vilkår</li>
         <li>Privatlivspolitik</li>
         <li>Kontakt</li>
       </ul>
 
-   <ul>
-     <li>Erhverv</li>
-     <li>Leverandør</li>
-     <li>Privat</li>
-     <li>Ny på Skolemad.dk</li>
-   </ul>
+      <ul>
+        <li>Erhverv</li>
+        <li>Leverandør</li>
+        <li>Privat</li>
+        <li>Ny på Skolemad.dk</li>
+      </ul>
 
       <ul>
         <li>SkoleMad ApS</li>
-          <li>Klaringen 15</li>
-          <li>4174 Jystrup</li>
-          <li>70222910</li>
-          <li>post@skolemad.dk</li>
+        <li>Klaringen 15</li>
+        <li>4174 Jystrup</li>
+        <li>70222910</li>
+        <li>post@skolemad.dk</li>
       </ul>
     </footer>
   </body>
+
 </html>

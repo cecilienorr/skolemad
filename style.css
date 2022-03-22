@@ -529,6 +529,10 @@ footer ul {
   padding: 2rem;
   border-radius: var(--border-radius-m);
 }
+/* .tabs input[type="radio"]:checked + label {
+  background: var(--light);
+  text-decoration: underline;
+} */
 
 .metode li {
   list-style: none;
@@ -544,4 +548,65 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 5px;
+}
+
+@media (max-width: 465px) {
+  .tabs .tab,
+  .tabs label,
+  .tabs .tab.alm {
+    order: initial;
+    border-radius: var(--border-radius-s);
+  }
+
+  .tabs label,
+  .tab.alm {
+    width: 100%;
+    margin: var(--spacing-15) auto -20px auto;
+    border-radius: var(--border-radius-s);
+  }
+}
+
+/*Flow*/
+
+.placeOrder {
+  background: var(--light-50);
+  max-width: 40vw;
+  min-width: 300px;
+  border-radius: var(--border-radius-s);
+  padding: var(--spacing-40);
+  margin: var(--spacing-40) auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-30);
+}
+
+.placeOrder a {
+  align-self: end;
+}
+
+.tabs .menu label {
+  justify-content: flex-start;
+  font-size: var(--font-size-body);
+}
+
+.tabs .menu div {
+  display: flex;
+  padding-left: var(--spacing-30);
+}
+
+.tabs .menu p {
+  font-size: var(--font-size-body-lead);
+}
+
+.tabs .menu input[type="radio"] {
+  display: inherit;
+}
+
+.tabs .menu input[type="radio"]:checked + label {
+  background: var(--light);
+  text-decoration: underline;
+}
+
+.tabs .menu input[type="radio"]:checked + label + .tab {
+  display: inline;
 }
