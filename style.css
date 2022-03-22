@@ -449,22 +449,35 @@ footer ul {
 
 /* Payment page */
 
-.payment-site h3 {
-  margin: 2rem 20rem;
-}
+@media (min-width: 600px) {
+  .payment-site h3 {
+    margin: 2rem 20rem;
+  }
+  .payment-site .tilbage {
+    margin: 2rem 22rem;
+  }
+  .pay-group {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 2rem 20rem;
+    padding: 3rem;
+  }
 
-.payment-site .tilbage {
-  margin: 2rem 22rem;
+  .mobilepay {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 2rem 20rem;
+    padding: 3rem;
+  }
 }
 
 .pay-group {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  margin: 2rem 20rem;
   background-color: var(--light-50);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 30px;
+  margin: 1rem;
 }
 
 #payment input {
@@ -484,12 +497,9 @@ footer ul {
 }
 
 .mobilepay {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  margin: 2rem 20rem;
+  margin: 1rem;
   background-color: var(--light-50);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 30px;
 }
 
