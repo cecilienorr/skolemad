@@ -14,48 +14,69 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="payment-site">
     <h3>Sæt ind oplysninger</h3>
-    <form action="payment">
-      <div class="name">
-        <label for="name">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Kortholders navn"
-            required
-          />
-        </label>
-      </div>
-      <div class="number">
-        <label for="number">
-          <input
-            type="text"
-            id="number"
-            name="number"
-            placeholder="Kort nummer"
-            required
-          />
-        </label>
-      </div>
-      <div class="ex-date">
-        <label for="expire-date">
-          Udløbsdato
-          <input type="number" id="number" name="number" required />
-        </label>
-        <label for="expire-date">
-          /
-          <input type="number" id="number" name="number" required />
-        </label>
-      </div>
-      <div class="cvv">
-        <label for="cvv">
-          <input type="number" id="cvv" name="cvv" placeholder="cvv" required />
-        </label>
-      </div>
-    </form>
-    <a href="landingpage.html"><button class="btn neutral">Betale</button></a>
+    <div class="pay-group">
+      <form action="payment" id="payment">
+        <div class="name">
+          <label for="name">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Kortholders navn"
+              required
+            />
+          </label>
+        </div>
+        <div class="number">
+          <label for="number">
+            <input
+              type="text"
+              id="card-number"
+              name="number"
+              placeholder="Kort nummer"
+              required
+            />
+          </label>
+        </div>
+        <div class="ex-date">
+          <label for="expire-date">
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="Udløbs måned"
+              required
+            />
+          </label>
+          <label for="expire-date">
+            /
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="Udløbs år"
+              required
+            />
+          </label>
+        </div>
+        <div class="cvv">
+          <label for="cvv">
+            <input
+              type="number"
+              id="cvv"
+              name="cvv"
+              placeholder="CVV"
+              required
+            />
+          </label>
+          <a href="landingpage.html"
+            ><button class="btn neutral">Betale</button></a
+          >
+        </div>
+      </form>
+    </div>
     <footer>
       <ul>
         <li>Vilkår</li>

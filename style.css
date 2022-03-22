@@ -446,3 +446,35 @@ footer ul {
   font-size: var(--font-size-body-small);
   margin-bottom: var(--spacing-10);
 }
+
+/* Payment page */
+
+.payment-site h3 {
+  margin: 2rem 20rem;
+}
+
+.pay-group {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 2rem 20rem;
+  background-color: var(--light-50);
+  padding: 3rem;
+  border-radius: 30px;
+}
+
+#payment input {
+  padding: 1rem 12rem 1rem 0.7rem;
+  border-radius: 12px;
+  border: none;
+  margin: 1rem;
+}
+
+#payment #number {
+  padding-left: 0.7rem;
+  padding-right: 0;
+}
+
+#payment #cvv {
+  padding: 1rem;
+}
