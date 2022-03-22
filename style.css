@@ -259,19 +259,7 @@ a:active {
 
 .hero_section h1 {
   color: var(--dark);
-  padding: 5rem;
-}
-
-@media (min-width: 800px) {
-  .hero_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: var(--light);
-  }
-  .hero_section article {
-    padding: auto;
-    margin: auto;
-  }
+  padding: 1rem;
 }
 
 .hero_section .login {
@@ -294,7 +282,24 @@ a:active {
   border-radius: 12px;
   border: none;
   margin: 1rem;
+}
 
+@media (min-width: 800px) {
+  .hero_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--light);
+  }
+
+  .hero_section article {
+    padding: auto;
+    margin: auto;
+  }
+
+  .hero_section h1 {
+    padding: 5rem;
+  }
+}
 
 /*Links*/
 a:link,
@@ -380,23 +385,22 @@ footer ul {
   justify-content: space-around;
 }
 
-.intro{
+.intro {
   padding: var(--spacing-40) var(--spacing-15);
 }
 .intro ul {
- list-style: none;
- padding: var(--spacing-20) 0;
+  list-style: none;
+  padding: var(--spacing-20) 0;
 }
-.intro ul p{
+.intro ul p {
   font-size: var(--font-size-body-small);
 }
 
 .intro p {
   max-width: 800px;
-
 }
 
-.options{
+.options {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-40);
@@ -405,14 +409,13 @@ footer ul {
   margin: auto;
 }
 
-@media (max-width: 600px){
-  .options{
+@media (max-width: 600px) {
+  .options {
     flex-direction: column;
   }
 }
 
-
-#saldo{
+#saldo {
   color: var(--tertiary-4);
 }
 
