@@ -331,25 +331,14 @@ footer ul {
 
 /*landingPage*/
 
-.landingPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .intro{
-  padding: var(--spacing-40) var(--spacing-15);
-}
-.intro ul {
- list-style: none;
- padding: var(--spacing-20) 0;
-}
-.intro ul p{
-  font-size: var(--font-size-body-small);
+  padding: var(--spacing-80);
 }
 
 .intro p {
-  max-width: 800px;
+  font-size: var(--font-size-body-lead);
+  max-width: 600px;
+  margin-top: var(--spacing-20);
 
 }
 
@@ -357,25 +346,26 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-40);
-  padding: var(--spacing-30) 0;
-  max-width: 800px;
-  margin: auto;
+  padding: var(--spacing-80);
+}
+
+.options a{
+  align-self: center;
 }
 
 @media (max-width: 600px){
   .options{
     flex-direction: column;
   }
+
+  .intro, .options {
+    padding: var(--spacing-40);
+}
 }
 
-
-#saldo{
-  color: var(--tertiary-4);
-}
 
 .menu {
   padding: var(--spacing-40) var(--spacing-15);
-  background: var(--primary-05);
 }
 
 .menu ol {
@@ -383,16 +373,75 @@ footer ul {
   padding: var(--spacing-20) 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: var(--spacing-20);
+  justify-content: center;
 }
 
 .menu li {
   font-size: var(--font-size-body-lead);
   line-height: var(--spacing-30);
-  width: 270px;
+  width: 250px;
 }
 
 .menu p {
-  font-size: var(--font-size-body-small);
+  font-size: var(--font-size-body-lead);
   margin-bottom: var(--spacing-10);
 }
+
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+}
+
+.tabs p{
+  font-size: var(--font-size-body);
+}
+
+.tabs label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background:none;
+  font-size: var(--font-size-body-lead);
+  transition: ease 0.3s;
+  border-radius: 30px 30px 0 0;
+}
+
+.tabs .tab {
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 1rem;
+  background: var(--secondary-05);
+  border-radius: 30px;
+  font-size: var(--font-size-body-small);
+ 
+}
+
+.tabs .tab.alm{
+  border-radius: 0 30px 30px 30px;
+}
+
+
+
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs input[type=radio]:checked + label {
+  background: var(--secondary-05)
+}
+
+.tabs input[type=radio]:checked + label + .tab {
+  display: block;
+
+}
+
