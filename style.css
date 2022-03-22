@@ -425,9 +425,6 @@ footer ul {
   }
 }
 
-#saldo {
-  color: var(--tertiary-4);
-}
 
 .menu {
   padding: var(--spacing-40) var(--spacing-15);
@@ -451,6 +448,27 @@ footer ul {
 .menu p {
   font-size: var(--font-size-body-small);
   margin-bottom: var(--spacing-10);
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: var(--light);
+  text-decoration: underline;
+}
+
+@media (max-width: 465px) {
+  .tabs .tab,
+  .tabs label,
+  .tabs .tab.alm {
+    order: initial;
+    border-radius: var(--border-radius-s);
+  }
+
+  .tabs label,
+  .tab.alm {
+    width: 100%;
+    margin: var(--spacing-15) auto -20px auto;
+    border-radius: var(--border-radius-s);
+  }
 }
 
 /* Payment page */
@@ -529,10 +547,7 @@ footer ul {
   padding: 2rem;
   border-radius: var(--border-radius-m);
 }
-/* .tabs input[type="radio"]:checked + label {
-  background: var(--light);
-  text-decoration: underline;
-} */
+
 
 .metode li {
   list-style: none;
@@ -548,22 +563,6 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 5px;
-}
-
-@media (max-width: 465px) {
-  .tabs .tab,
-  .tabs label,
-  .tabs .tab.alm {
-    order: initial;
-    border-radius: var(--border-radius-s);
-  }
-
-  .tabs label,
-  .tab.alm {
-    width: 100%;
-    margin: var(--spacing-15) auto -20px auto;
-    border-radius: var(--border-radius-s);
-  }
 }
 
 /*Flow*/
