@@ -266,8 +266,6 @@ a:active {
 
 /*****Index page*****/
 
-/* hero section*/
-
 .hero_section {
   display: block;
   padding: 1rem;
@@ -276,6 +274,13 @@ a:active {
 .hero_section h1 {
   color: var(--dark);
   padding: 1rem;
+}
+
+.hero_section h3 {
+  color: var(--primary-4);
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  font-size: var(--font-size-body-lead);
 }
 
 .hero_section .login {
@@ -307,13 +312,17 @@ a:active {
     background-color: var(--light);
   }
 
+  .hero_section h3 {
+    padding-left: 5rem;
+  }
+
   .hero_section article {
     padding: auto;
     margin: auto;
   }
 
   .hero_section h1 {
-    padding: 5rem;
+    padding: 2rem 5rem;
   }
 }
 
