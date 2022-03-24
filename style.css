@@ -534,8 +534,12 @@ input[type="checkbox"] {
 
 .options {
   background-color: var(--light-50);
-  padding: 3rem;
-  padding-left: 10rem;
+  padding: var(--spacing-30);
+  padding-left: var(--spacing-80);
+}
+
+.options h3 {
+  padding-left: var(--spacing-30);
 }
 
 .op-btn-group {
@@ -561,7 +565,7 @@ input[type="checkbox"] {
   }
 
   .menu {
-    padding-left: var(--spacing-80);
+    padding-left: var(--spacing-100);
     padding-right: var(--spacing-80);
   }
 }
@@ -578,7 +582,7 @@ input[type="checkbox"] {
 }
 
 .menu {
-  padding: var(--spacing-80) var(--spacing-100);
+  padding: var(--spacing-50) var(--spacing-80);
   background: var(--primary-05);
 }
 
@@ -737,46 +741,44 @@ h1 {
   margin: 3rem;
 }
 
-
 /*konto*/
-.konto{
+.konto {
   padding: var(--spacing-80);
 }
 
-.konto h3{
+.konto h3 {
   padding: var(--spacing-15) 0;
 }
 table {
   width: 600px;
   min-width: 320px;
-    border: 0.3px solid var(--primary);
-    border-radius: var(--border-radius-s);
-    background: var(--light-50);
-    border-radius: var(--border-radius-s);
-    padding: var(--spacing-10);
+  border: 0.3px solid var(--primary);
+  border-radius: var(--border-radius-s);
+  background: var(--light-50);
+  border-radius: var(--border-radius-s);
+  padding: var(--spacing-10);
 }
 
-td,th{
-padding: var(--spacing-10);
+td,
+th {
+  padding: var(--spacing-10);
 }
 
 thead,
 tfoot {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 th {
   background: var(--light-50);
 }
 
-
 tr:nth-child(odd) {
   background-color: var(--light-20);
   border: 2px solid var(--primary);
-
 }
 
-table thead{
+table thead {
   position: sticky;
   top: 20px;
 }
